@@ -13,11 +13,11 @@
       height:100%;
     }
     @keyframes myfirst {
-      from {background:red;}
-      to {background:blue;}
+      from {background:red;opacity:0}
+      to {background:blue;opacity:100}
     }
-    h1{
-      animation: myfirst 100s;
+    h1,p{
+      animation: myfirst 1 infinite;
     }
   </style>
 </head>
