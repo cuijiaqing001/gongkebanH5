@@ -12,22 +12,59 @@
     html{
       height:100%;
     }
-    @keyframes myfirst {
-      from {background:red;opacity:0}
-      to {background:blue;opacity:100}
+    @keyframes f1 {
+      0% {opacity:0}
+      12.5% {opacity:100}
+      25% {opacity:0}
+      100% {opacity:0}
     }
-    h1,p{
-      animation: myfirst 1s infinite;
+     @keyframes f2 {
+      0% {opacity:0}
+      25% {opacity:0}
+      37.5% {opacity:100}
+      50% {opacity:0}
+      100% {opacity:0}
+    }
+     @keyframes f3 {
+      0% {opacity:0}
+      50% {opacity:0}
+      62.5% {opacity:100}
+      75% {opacity:0}
+      100% {opacity:0}
+    }
+     @keyframes f4 {
+      0% {opacity:0}
+      75% {opacity:0}
+      87.5% {opacity:100}
+      100% {opacity:0}
+    }
+    p{
+      font-size: 100px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+    #z1{
+      animation: f1 8s infinite;
+    }
+    #z2{
+      animation: f2 8s infinite;
+    }
+    #z3{
+      animation: f3 8s infinite;
+    }
+    #z4{
+      animation: f4 8s infinite;
     }
   </style>
 </head>
 <body>
-  <audio src="一番星.mp3" controls="controls" autoplay="antoplay">
+  <audio src="一番星.mp3" autoplay="antoplay">
   </audio>
   <h1>静夜思</h1>
-  <p>床前明月光，</p>
-  <p>疑是地上霜。</p>
-  <p>举头望明月，</p>
-  <p>低头思故乡。</p>
+  <p id="z1">床前明月光，</p>
+  <p id="z2">疑是地上霜。</p>
+  <p id="z3">举头望明月，</p>
+  <p id="z4">低头思故乡。</p>
 </body>
 </html>
